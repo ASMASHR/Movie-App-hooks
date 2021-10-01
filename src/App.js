@@ -25,10 +25,7 @@ function App() {
    return (
     <div className="App">
       <Navbar/>
-      <div className="Add-button" >
-        <button onClick={openModal} className="buttonAddMovie"> Add Movie</button>
-        <AddingFilm AddFilm={AddFilm} setAddFilm={setAddFilm} updateList={updateList} />  
-      </div> 
+      <AddingFilm AddFilm={AddFilm} setAddFilm={setAddFilm} updateList={updateList} />  
       <SearchBar movies={movies} inputFilmName={inputFilmName}  inputRate={inputRate} setinputRate={setinputRate} setinputFilmName={setinputFilmName} />
       <MovieCard  movies ={movies} inputRate={inputRate} inputFilmName={inputFilmName} />
       <Footer/>
